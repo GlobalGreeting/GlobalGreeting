@@ -2,11 +2,15 @@
 
 ### Check to see if any files have changed
 
-status="$(git status | grep Changes)"
-if [ -n "$status" ]; then
-    git add .
-    git commit -m "$1"
-    git push -u origin master
+if [ $# -eq 2 ]; then
+    echo "Check Git"
+    status="$(git status | grep Changes)"
+    if [ -n "$status" ]; then
+	echo "Push to Git"
+	git add .
+	git commit -m "$1"
+	git push -u origin $2
+    fi
 else
     echo "No Changes"
     exit
