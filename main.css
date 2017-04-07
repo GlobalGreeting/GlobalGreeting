@@ -4,3 +4,53 @@ body {
 	font-size: 72px;
 	color: white;
 }
+
+.header {
+	font-family: Hind;
+	background-color: #888888;
+	padding-left: 10px;
+	width: 1072px;
+	height: 60px;
+	font-size: 36px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	padding: 15px;
+	height: 560px;
+	width: 480px;
+	color: black;
+}
+
+.row {
+	height: 300px;
+	flex-wrap: wrap;
+	padding: 15px;
+	margin: -15px;
+}
+
+.highlight {
+	background-color: #FF9900;
+	color: white;
+}
+
+.lowlight {
+	background-color: #880088;
+	color: white;
+}
+
+.footer {
+	font-family: Hind;
+	width: 1072px;
+	padding-left: 10px;
+	background-color: #888888;
+	height: 60px; 
+	font-size: 36px;
+}
