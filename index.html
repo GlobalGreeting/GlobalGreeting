@@ -5,19 +5,28 @@
   <title>GlobalGreeting</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&subset=latin">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind&subset=latin">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="main-3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="change.js"></script>
 </head>
 <body>
 <div class="header">"Hello World" around the World</div>
 <div class="content">
 	<div class="column">
-		<div class="row">To say <b>Hello</b> in <b>Chinese</b></div>
-		<div class="row highlight">You say <span lang="zh"><b>中文</b></span></div>
+		<div class="row">To say <b>Hello</b> in
+			<div class="dropdown">
+				<button id="choice" class="dropbutton">?</button>
+				<div class="dropdown-content">
+					<span id="chinese">Chinese</span>
+					<span id="spanish">Spanish</span>
+					<span id="greek">Greek</span>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div class="row result">You say <br><b><span id="result">?</span></b></div>
 	</div>
-	<div class="column lowlight">Thank you for using Global Greeting<br></div>
+	<div class="column info">Thank you for using Global Greeting<br></div>
 </div>
 <div class="footer">&copy 2017 Global Greetings, Inc.</div>
 </body>

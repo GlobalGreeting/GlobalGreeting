@@ -1,0 +1,23 @@
+{
+  "name": "globalgreeting",
+  "version": "1.0.0",
+  "description": "Global Greeting Main Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlobalGreeting/GlobalGreeting.git"
+  },
+  "author": "Amy Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GlobalGreeting/GlobalGreeting/issues"
+  },
+  "homepage": "https://github.com/GlobalGreeting/GlobalGreeting#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-qunit": "^2.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUnit Test Suite</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+
+    <script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+    <script src="tests.js"></script>
+    <script type="text/javascript" src="change.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <div class="content" hidden="hidden">
+        <div class="column">
+            <div class="row">To say <b>Hello</b> in
+                <div class="dropdown">
+                    <button id="choice" class="dropbutton">?</button>
+                    <div class="dropdown-content">
+                        <span id="chinese">Chinese</span>
+                        <span id="spanish">Spanish</span>
+                        <span id="greek">Greek</span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="row result">You say
+                <br><b><span id="result">?</span></b></div>
+        </div>
+    </div>
+</body>
+</html>
